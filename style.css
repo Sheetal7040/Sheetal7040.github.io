@@ -888,3 +888,72 @@ h1 {
     font-size: 9px;
   }
 }
+
+
+/* Fix Project 02 equation layout */
+.cosmic-art {
+  height: 180px !important;
+  background:
+    radial-gradient(ellipse at 20% 20%, #292b83, transparent 55%),
+    radial-gradient(ellipse at 85% 80%, #07536b, transparent 55%),
+    #080f25 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 14px !important;
+}
+
+.cosmic-art::before {
+  content: "∂ρ/∂t + ∇·(ρv) = 0\A ρ Dv/Dt = −∇P + ρg";
+  position: static;
+  display: block;
+  white-space: pre;
+  inset: auto;
+  color: #e0f8ff;
+  font: 15px/2 Georgia, serif;
+  text-align: center;
+  text-shadow: 0 0 10px #39c5ff;
+  z-index: 1;
+}
+
+.cosmic-art::after {
+  content: "∂E/∂t + ∇·[(E+P)v] = ρv·g";
+  position: static;
+  display: block;
+  white-space: normal;
+  inset: auto;
+  color: #a7dfff;
+  font: 12px/1.5 Georgia, serif;
+  text-align: center;
+  text-shadow: 0 0 8px #227aff;
+  z-index: 1;
+}
+
+.cosmic-art .cosmic-web {
+  display: none;
+}
+
+.cosmic-art > span {
+  position: absolute;
+  bottom: 7px;
+  left: 10px;
+  font-size: 7px;
+  color: #b6eaff;
+}
+
+@media (max-width: 650px) {
+  .cosmic-art {
+    height: 170px !important;
+    gap: 12px;
+  }
+
+  .cosmic-art::before {
+    font-size: 12px;
+  }
+
+  .cosmic-art::after {
+    font-size: 10px;
+  }
+}
