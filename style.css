@@ -849,7 +849,6 @@ h1 {
 /* Energy equation and fluid-flow streamlines */
 .cosmic-art::after {
   content:
-    "∂E/∂t + ∇ · [(E + P)v] = ρv · g\A"
     "∇ · v = 0";
   white-space: pre;
   position: absolute;
