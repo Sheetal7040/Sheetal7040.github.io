@@ -918,18 +918,6 @@ h1 {
   z-index: 1;
 }
 
-.cosmic-art::after {
-  content: "∂E/∂t + ∇·[(E+P)v] = ρv·g";
-  position: static;
-  display: block;
-  white-space: normal;
-  inset: auto;
-  color: #a7dfff;
-  font: 12px/1.5 Georgia, serif;
-  text-align: center;
-  text-shadow: 0 0 8px #227aff;
-  z-index: 1;
-}
 
 .cosmic-art .cosmic-web {
   display: none;
