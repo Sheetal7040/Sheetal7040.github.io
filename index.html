@@ -1,1 +1,347 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic portfolio of Sheetal, an astronomy graduate interested in cosmology, dark matter, gravitational lensing, and computational astrophysics.">
+  <title>Sheetal | Astronomy & Computational Astrophysics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#home">S<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Let's connect ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          ASTRONOMY · COSMOLOGY · COMPUTATION
+        </div>
+
+        <h1>Exploring the universe,<br>
+          <span class="gradient-text">one question at a time.</span>
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm Sheetal — an astronomy graduate interested in understanding
+          the universe through computational astrophysics, cosmological
+          simulations, and gravitational lensing.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Explore my research ↘</a>
+          <a class="button secondary"
+             href="https://github.com/Sheetal7040"
+             target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+          </a>
+        </div>
+
+        <div class="hero-tags">
+          <span>Dark Matter</span>
+          <span>Cosmology</span>
+          <span>Numerical Simulations</span>
+        </div>
+      </div>
+
+      <div class="universe" aria-label="Illustration of a galaxy in space">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="planet"></div>
+        <div class="planet-small"></div>
+        <div class="universe-label">OBSERVE · MODEL · UNDERSTAND</div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div><strong>M.Sc.</strong><span>Astronomy</span></div>
+      <div><strong>8.59/10</strong><span>M.Sc. CPI</span></div>
+      <div><strong>Python · C</strong><span>Scientific computing</span></div>
+      <div><strong>Cosmology</strong><span>Research interests</span></div>
+    </section>
+
+    <section class="section content-section" id="about">
+      <div class="section-heading">
+        <span class="section-index">01 / ABOUT</span>
+        <h2>Curiosity on a cosmic scale.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p class="lead">
+            I'm interested in connecting theoretical astrophysics with
+            computational methods to investigate the structure and evolution
+            of our universe.
+          </p>
+        </div>
+        <div class="about-detail">
+          <p>
+            My academic background includes astronomy, cosmology, radio
+            interferometry, and numerical methods. During my master's thesis
+            at IIT Indore, I worked on baseline design for a radio
+            interferometer, developing a Python pipeline for simulation and
+            baseline optimisation.
+          </p>
+          <p>
+            I'm particularly interested in dark matter, large-scale structure,
+            gravitational lensing, and cosmological simulations — and in
+            developing computational tools that help turn scientific
+            questions into measurable results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="research">
+      <div class="section-heading">
+        <span class="section-index">02 / RESEARCH & PROJECTS</span>
+        <h2>Questions worth exploring.</h2>
+        <p class="section-intro">
+          Selected academic work and computational projects.
+          Each project links to its code or documentation where available.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-top">
+            <span class="project-number">PROJECT 01</span>
+            <span class="project-symbol">◉</span>
+          </div>
+          <div class="project-art uv-art">
+            <div class="uv-ring"></div>
+            <div class="uv-ring ring-two"></div>
+            <div class="uv-points"></div>
+            <span>U–V PLANE / BASELINE COVERAGE</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">MASTER'S THESIS · RADIO ASTRONOMY</p>
+            <h3>Radio Interferometer Baseline Design</h3>
+            <p>
+              Developed a Python pipeline for interferometer simulation and
+              baseline optimisation using Monte Carlo random sampling, with
+              an emphasis on improving (u,v) coverage and reducing sidelobe
+              levels. The work included validation against GMRT coverage
+              and site analysis for IIT Indore.
+            </p>
+            <div class="tag-list">
+              <span>Python</span><span>Monte Carlo</span>
+              <span>Radio Astronomy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-number">PROJECT 02</span>
+            <span class="project-symbol">✳</span>
+          </div>
+          <div class="project-art cosmic-art">
+            <div class="cosmic-web"></div>
+            <span>COSMIC STRUCTURE / N-BODY METHODS</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">COMPUTATIONAL COSMOLOGY</p>
+            <h3>Dark Matter & N-body Simulations</h3>
+            <p>
+              Computational work involving particle-mesh methods, FFT-based
+              calculations, initial conditions using the Zel'dovich
+              approximation, density assignment, and analysis of matter
+              clustering and power spectra.
+            </p>
+            <div class="tag-list">
+              <span>C</span><span>Python</span><span>FFTW</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/Sheetal7040/Dark-Matter"
+               target="_blank" rel="noopener noreferrer">
+              Explore repository ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-number">PROJECT 03</span>
+            <span class="project-symbol">⌁</span>
+          </div>
+          <div class="project-art lens-art">
+            <div class="lens-halo"></div>
+            <div class="lens-core"></div>
+            <div class="lens-arc arc-one"></div>
+            <div class="lens-arc arc-two"></div>
+            <span>GRAVITATIONAL LENSING</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">RESEARCH INTEREST</p>
+            <h3>Gravitational Lensing & Mass Modelling</h3>
+            <p>
+              Exploring how gravitational lensing can constrain the
+              distribution of matter, including dark matter, through
+              lens models, mass profiles, and computational reconstruction
+              techniques.
+            </p>
+            <div class="tag-list">
+              <span>Cosmology</span><span>Lens Modelling</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/Sheetal7040/DM-Phenomenology"
+               target="_blank" rel="noopener noreferrer">
+              Explore related code ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-number">PROJECT 04</span>
+            <span class="project-symbol">∿</span>
+          </div>
+          <div class="project-art mcmc-art">
+            <svg viewBox="0 0 320 110" role="img"
+                 aria-label="Illustrative parameter sampling plot">
+              <path d="M12 90 H310 M12 12 V90" class="plot-axis"/>
+              <path d="M14 82 C36 78,42 24,72 34 S110 82,136 55 S175 14,199 43 S235 78,258 38 S289 30,309 19"
+                    class="plot-line"/>
+              <path d="M14 84 C38 71,49 51,75 57 S118 29,142 44 S181 74,207 56 S252 23,278 44 S298 54,309 31"
+                    class="plot-line plot-line-two"/>
+            </svg>
+            <span>PARAMETER ESTIMATION / MCMC</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">STATISTICAL COSMOLOGY</p>
+            <h3>Cosmological Parameter Estimation</h3>
+            <p>
+              Implemented a Metropolis–Hastings Markov chain Monte Carlo
+              sampler in Python to explore cosmological parameters,
+              including the Hubble constant and matter density parameter,
+              using Type Ia supernova data.
+            </p>
+            <div class="tag-list">
+              <span>Python</span><span>MCMC</span><span>Statistics</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/Sheetal7040"
+               target="_blank" rel="noopener noreferrer">
+              Browse GitHub projects ↗
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section content-section" id="education">
+      <div class="section-heading">
+        <span class="section-index">03 / EDUCATION</span>
+        <h2>Academic foundations.</h2>
+      </div>
+
+      <div class="education-list">
+        <article class="education-item">
+          <div class="education-date">2022 — 2024</div>
+          <div>
+            <h3>Master of Science in Astronomy</h3>
+            <p class="institution">Indian Institute of Technology Indore</p>
+            <p>
+              CPI: 8.59/10 · Master's thesis on baseline design for an
+              IIT Indore radio interferometer.
+            </p>
+            <p class="coursework">
+              Relevant coursework: Radio Astronomy, Relativity and
+              Cosmology, Galactic and Extragalactic Astronomy,
+              Astrostatistics, Computational Methods in Astronomy,
+              Astrophysical Fluids and Plasma.
+            </p>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <div class="education-date">2019 — 2022</div>
+          <div>
+            <h3>Bachelor's Degree</h3>
+            <p class="institution">Kurukshetra University</p>
+            <p>Overall percentage: 91.03%.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section content-section" id="skills">
+      <div class="section-heading">
+        <span class="section-index">04 / TECHNICAL SKILLS</span>
+        <h2>Tools for scientific discovery.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-icon">⌘</span>
+          <h3>Programming</h3>
+          <p>Python, C, scientific scripting, numerical computation.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">∑</span>
+          <h3>Numerical methods</h3>
+          <p>FFT, particle-mesh methods, CIC density assignment, Leapfrog integration.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">◌</span>
+          <h3>Data & statistics</h3>
+          <p>MCMC, Monte Carlo sampling, power spectra, data analysis.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">✧</span>
+          <h3>Astrophysics</h3>
+          <p>Cosmology, radio interferometry, dark matter, gravitational lensing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <span class="section-index">05 / CONTACT</span>
+      <h2>Let's talk about the universe.</h2>
+      <p>
+        Interested in my background or potential research opportunities?
+        I'd be happy to connect.
+      </p>
+      <div class="hero-actions">
+        <!-- Replace the example email with your professional email. -->
+        <a class="button primary" href="mailto:your.email@example.com">
+          Email me ↗
+        </a>
+        <a class="button secondary"
+           href="https://github.com/Sheetal7040"
+           target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+        <!-- Add your LinkedIn profile URL when ready. -->
+        <a class="button secondary"
+           href="https://www.linkedin.com/"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">S<span>.</span></a>
+    <p>Exploring the cosmos through science and computation.</p>
+    <p>© 2026 Sheetal · Built with curiosity.</p>
+  </footer>
+
+</body>
+</html>
+
