@@ -812,3 +812,79 @@ h1 {
     transition-duration: 0.01ms !important;
   }
 }
+/* Astrophysical Fluid Equations — Project 02 */
+
+.cosmic-art {
+  background:
+    radial-gradient(ellipse at 15% 25%, rgba(111, 87, 255, 0.30), transparent 40%),
+    radial-gradient(ellipse at 85% 75%, rgba(25, 208, 218, 0.23), transparent 45%),
+    linear-gradient(135deg, #080f2a, #10254c 55%, #080e20) !important;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Subtle scientific grid */
+.cosmic-art::before {
+  content:
+    "∂ρ/∂t + ∇ · (ρv) = 0\A"
+    "ρ Dv/Dt = −∇P + ρg";
+  white-space: pre;
+  position: absolute;
+  inset: 22px 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d9faff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(12px, 2vw, 19px);
+  line-height: 2.5;
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: 0 0 12px rgba(94, 222, 255, 0.55);
+  z-index: 1;
+}
+
+/* Energy equation and fluid-flow streamlines */
+.cosmic-art::after {
+  content:
+    "∂E/∂t + ∇ · [(E + P)v] = ρv · g\A"
+    "∇ · v = 0";
+  white-space: pre;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 28px;
+  color: rgba(145, 215, 255, 0.7);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(9px, 1.35vw, 12px);
+  line-height: 2.1;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(70, 160, 255, 0.6);
+  z-index: 2;
+}
+
+/* Hide the old geometric illustration */
+.cosmic-art .cosmic-web {
+  display: none;
+}
+
+/* Keep the artwork label readable */
+.cosmic-art > span {
+  z-index: 3;
+  color: #a8eaff;
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 650px) {
+  .cosmic-art::before {
+    font-size: 12px;
+    line-height: 2.2;
+  }
+
+  .cosmic-art::after {
+    font-size: 9px;
+  }
+}
